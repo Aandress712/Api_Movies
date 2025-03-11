@@ -1,6 +1,6 @@
 from models.movie import Movie as MovieModel
 from pydantic import BaseModel, Field
-from typing import Optional, List
+from typing import Optional
 
 class Movie(BaseModel):  # Este es el modelo de la pelicula
     

@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse, JSONResponse
 from pydantic import BaseModel               # La propiedad Fiel puede limitar las cosas
-from jwt_manager import create_token
+from utils.jwt_manager import create_token
 from config.database import engine, Base
 from middlewares.error_handler import ErrorHandler #-> Clase donde esta la exepcion
 from routers.movie import movie_router
